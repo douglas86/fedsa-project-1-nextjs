@@ -1,17 +1,16 @@
-@media only screen and (min-width: 600px) {
-    .links {
-        display: flex;
-    }
+.header {
+    display: column;
+    text-align: center;
+    font-family: Roboto;
+    background: #ffffff;
 }
-
-@media only screen and (max-width: 600px) {
-    .header {
-        text-align: center;
-    }
-    .links {
-        display: inline-block;
-    }
-    .link {
-        text-align: center;
-    }
+.links {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 22px;
+    line-height: 26px;
+}
+.link {
+    color: #1d1d1d;
+    text-decoration: none;
 }
