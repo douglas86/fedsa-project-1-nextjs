@@ -12,7 +12,14 @@ const Card = () => {
                     height={500}
                 />
             </div>
-            <h3>This is a card component</h3>
+            <div className={styles.text}>
+                <h1>COUNTESSA</h1>
+                <p>A mix between class and affordability</p>
+                <div className={styles.prices}>
+                    <p>R899</p>
+                    <p>R500</p>
+                </div>
+            </div>
         </div>
     );
 };
