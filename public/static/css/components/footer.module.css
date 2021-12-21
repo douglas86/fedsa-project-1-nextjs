@@ -31,3 +31,25 @@
 .logo {
     text-align: center;
 }
+
+@media (max-width: 600px) {
+    .content {
+        display: inline-block;
+        width: 100%;
+    }
+    .leftColumn {
+        width: 100%;
+        margin-left: 0%;
+        text-align: center;
+    }
+    .centerColumn {
+        width: 100%;
+        margin-left: 0%;
+        text-align: center;
+    }
+    .rightColumn {
+        width: 100%;
+        margin-left: 0%;
+        text-align: center;
+    }
+}
