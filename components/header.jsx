@@ -4,12 +4,11 @@ import Image from 'next/image';
 
 const Header = () => {
     return (
-        <div className={styles.header}>
+        <div className={styles.container}>
             <div className={styles.logo}>
                 <Image src={logo} alt="logo" width={100} height={80} />
             </div>
-            <div className={styles.links}>
-                <ul></ul>
+            <ul>
                 <li className={styles.links}>
                     <a className={styles.link} href="#">
                         FEATURE
@@ -25,7 +24,7 @@ const Header = () => {
                         CONTACT
                     </a>
                 </li>
-            </div>
+            </ul>
         </div>
     );
 };

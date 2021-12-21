@@ -1,16 +1,36 @@
-.header {
-    display: column;
-    text-align: center;
-    font-family: Roboto;
-    background: #ffffff;
+.container {
+    display: flex;
+    padding: 1%;
+    background-color: #ffffff;
+}
+.logo {
+    width: 50%;
+}
+.container ul {
+    display: flex;
+    margin-left: 30%;
+    line-height: 3;
 }
 .links {
-    display: inline-block;
     list-style-type: none;
-    font-size: 22px;
-    line-height: 26px;
+    margin-right: 20px;
 }
-.link {
-    color: #1d1d1d;
-    text-decoration: none;
+
+@media (max-width: px) {
+    .container {
+        display: block;
+    }
+    .logo {
+        text-align: center;
+        width: 100%;
+    }
+    .container ul {
+        display: block;
+        margin-left: 0%;
+        line-height: 2;
+        text-align: center;
+    }
+    .links {
+        margin-left: -20px;
+    }
 }
