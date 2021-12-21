@@ -1,9 +1,15 @@
+@media only screen and (min-width: 600px) {
+    .links {
+        display: flex;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .header {
         text-align: center;
     }
     .links {
-        display: flex;
+        display: inline-block;
     }
     .link {
         text-align: center;
