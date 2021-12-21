@@ -1,4 +1,4 @@
-import styles from '../public/static/css/header.module.css';
+import styles from '../public/static/css/components/header.module.css';
 import logo from '../public/static/images/logo.svg';
 import Image from 'next/image';
 
