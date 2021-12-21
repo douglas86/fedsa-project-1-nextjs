@@ -1,12 +1,10 @@
 import Image from 'next/image';
 import styles from '../public/static/css/components/Card.module.css';
-import useSWR from 'swr';
+import { Getter } from './api';
 
 const Card = () => {
-    const fetcher = (url) => fetch(url).then((res) => res.json());
-    const { data } = useSWR('/api/Card', fetcher);
 
-    console.log('data', data);
+    console.log('Getting', Getter('/api/Card'));
 
     return (
         <div className={styles.card}>
