@@ -1,51 +1,77 @@
 .card {
-    display: flex;
+    width: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    width: 50%;
     margin: 2% 25%;
-    background-color: #fafafa;
 }
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+.textContainer {
+    padding: 5%;
 }
-.image {
-    width: 50%;
+.textContainerTop h3 {
+    font-size: 38px;
 }
-.prices li {
-    list-style-type: none;
+.textContainerTop p {
+    visibility: hidden;
+}
+.textContainerBottom {
+    display: flex;
+    margin-top: -30px;
 }
 .prices {
-    margin-right: 20%;
+    width: 50%;
+    margin-top: -5px;
 }
 .pricesTop {
     color: #8c8c8c;
     text-decoration: line-through;
     font-size: 28px;
-    margin-bottom: 20px;
 }
 .pricesBottom {
     font-size: 32px;
-    margin-top: -30px;
 }
-.textContainerBottom {
+.textContainerBottom ul {
+    padding: 0;
+}
+.textContainerBottom li {
+    list-style-type: none;
+}
+.icons {
     display: flex;
-}
-.textContainerTop {
-    visibility: hidden;
-}
-.textContainerTop h3 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 38px;
-    line-height: 45px;
-    margin-bottom: 20px;
 }
 .icons button {
     border-color: transparent;
     background-color: #ffffff;
-    width: 38px;
+    width: 20%;
     height: auto;
-    margin: 20px;
+    margin: 10px;
+}
+
+@media (min-width: 1030px) {
+    .card {
+        display: flex;
+        width: 50%;
+        height: auto;
+        padding: 1%;
+    }
+    .textContainer {
+        padding: 1%;
+    }
+    .image {
+        width: 50%;
+    }
+    .textContainerTop p {
+        visibility: visible;
+        margin-top: -40px;
+    }
+    .textContainerTop {
+        height: 50%;
+    }
+    .textContainerBottom {
+        text-align: center;
+    }
+    .icons {
+        display: flex;
+    }
+    .icons button {
+        width: 20%;
+    }
 }

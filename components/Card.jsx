@@ -44,8 +44,8 @@ const Card = () => {
                                               <Image
                                                   src={`/static/images/assets/heart.svg`}
                                                   alt="heart"
-                                                  width={20}
-                                                  height={20}
+                                                  width={200}
+                                                  height={200}
                                               />
                                           </div>
                                       </button>
@@ -55,8 +55,8 @@ const Card = () => {
                                           <Image
                                               src={`/static/images/assets/cart.svg`}
                                               alt="cart"
-                                              width={20}
-                                              height={20}
+                                              width={200}
+                                              height={200}
                                           />
                                       </button>
                                   </div>
