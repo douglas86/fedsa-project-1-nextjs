@@ -20,14 +20,7 @@ const Card = () => {
                                   height={500}
                               />
                           </div>
-                          <div className={styles.text}>
-                              <h1 className={styles.title}>{item.title}</h1>
-                              <p className={styles.details}>{item.details}</p>
-                              <div className={styles.prices}>
-                                  <p>R{item.originalPrice}</p>
-                                  <p>R{item.discountedPrice}</p>
-                              </div>
-                          </div>
+                          
                       </div>
                   ))
                 : null}
