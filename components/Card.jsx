@@ -30,7 +30,7 @@ const Card = () => {
                                       <li className={styles.pricesTop}>
                                           R{item.originalPrice}
                                       </li>
-                                      <li className={styles.priceBottom}>
+                                      <li className={styles.pricesBottom}>
                                           R{item.discountedPrice}
                                       </li>
                                   </ul>
