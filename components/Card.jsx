@@ -20,7 +20,27 @@ const Card = () => {
                                   height={500}
                               />
                           </div>
-                          
+                          <section className={styles.textContainer}>
+                              <div className={styles.textContainerTop}>
+                                  <h3>{item.title}</h3>
+                                  <p>{item.details}</p>
+                              </div>
+                              <div className={styles.textContainerBottom}>
+                                  <ul className={styles.prices}>
+                                      <li className={styles.pricesTop}>
+                                          R{item.originalPrice}
+                                      </li>
+                                      <li className={styles.priceBottom}>
+                                          R{item.discountedPrice}
+                                      </li>
+                                  </ul>
+                                  <div className={styles.icons}>
+                                      <button
+                                          className={productCardButton}
+                                      ></button>
+                                  </div>
+                              </div>
+                          </section>
                       </div>
                   ))
                 : null}

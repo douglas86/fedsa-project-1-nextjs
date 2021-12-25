@@ -1,7 +1,7 @@
 import Cards from './cardInfo.json';
 
 const handler = async (req, res) => {
-    const { method, body } = req;
+    const { method } = req;
 
     switch (method) {
         case 'GET':

@@ -1,5 +1,5 @@
 import styles from '../public/static/css/components/footer.module.css';
-import logo from '../public/static/images/logo.svg';
+import logo from '../public/static/images/assets/logo.svg';
 import Image from 'next/image';
 
 const Footer = () => {
