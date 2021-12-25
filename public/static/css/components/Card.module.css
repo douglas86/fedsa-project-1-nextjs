@@ -22,6 +22,24 @@
     font-style: normal;
     font-weight: normal;
 }
+.BottomSection {
+    display: flex;
+    margin-bottom: 20px;
+}
+.BottomSection ul {
+    padding-left: 0;
+}
+.BottomSection li {
+    list-style-type: none;
+}
+.topPrice {
+    color: #8c8c8c;
+    text-decoration-line: line-through;
+    font-size: 20px;
+}
+.bottomPrice {
+    font-size: 30px;
+}
 
 @media (max-width: 800px) {
     .card {

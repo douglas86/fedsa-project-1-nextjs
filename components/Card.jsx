@@ -24,7 +24,14 @@ const Card = () => {
                                   <p>{item.details}</p>
                               </div>
                               <div className={styles.BottomSection}>
-                                  <p>R{item.originalPrice}</p>
+                                  <ul>
+                                      <li className={styles.topPrice}>
+                                          R{item.originalPrice}
+                                      </li>
+                                      <li className={styles.bottomPrice}>
+                                          R{item.discountedPrice}
+                                      </li>
+                                  </ul>
                               </div>
                           </div>
                       </div>
