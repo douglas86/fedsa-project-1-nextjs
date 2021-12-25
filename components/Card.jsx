@@ -5,8 +5,6 @@ import { Getter } from './api';
 const Card = () => {
     const Get = Getter('/api/card');
 
-    console.log('Get', Get);
-
     return (
         <div>
             {Get !== undefined
