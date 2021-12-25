@@ -1,6 +1,10 @@
 {
-    "title": "COUNTESSA",
-    "details": "A mix between class and affordability",
-    "originalPrice": 899,
-    "discountedPrice": 500
+    "Card1": {
+        "ObjectId": 0,
+        "title": "COUNTESSA",
+        "details": "A mix between class and affordability",
+        "image": "chair-5.jpg",
+        "originalPrice": 899,
+        "discountedPrice": 500
+    }
 }

@@ -3,27 +3,34 @@ import styles from '../public/static/css/components/Card.module.css';
 import { Getter } from './api';
 
 const Card = () => {
+    const Get = Getter('/api/card');
 
-    console.log('Getting', Getter('/api/card'));
+    console.log('Get', Get);
 
     return (
-        <div className={styles.card}>
-            <div className={styles.image}>
-                <Image
-                    src={'/static/images/chairs/chair-5.jpg'}
-                    alt="chair"
-                    width={500}
-                    height={500}
-                />
-            </div>
-            <div className={styles.text}>
-                <h1>COUNTESSA</h1>
-                <p>A mix between class and affordability</p>
-                <div className={styles.prices}>
-                    <p>R899</p>
-                    <p>R500</p>
-                </div>
-            </div>
+        <div>
+            {Get !== undefined
+                ? Object.values(Get).map((item) => (
+                      <div key={item.ObjectId} className={styles.card}>
+                          <div className={styles.image}>
+                              <Image
+                                  src={`/static/images/chairs/${item.image}`}
+                                  alt="chair"
+                                  width={500}
+                                  height={500}
+                              />
+                          </div>
+                          <div className={styles.text}>
+                              <h1>{item.title}</h1>
+                              <p>{item.details}</p>
+                              <div className={styles.prices}>
+                                  <p>{item.originalPrice}</p>
+                                  <p>{item.discountedPrice}</p>
+                              </div>
+                          </div>
+                      </div>
+                  ))
+                : null}
         </div>
     );
 };
