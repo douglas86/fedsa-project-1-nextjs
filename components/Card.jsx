@@ -18,6 +18,15 @@ const Card = () => {
                                   height={500}
                               />
                           </div>
+                          <div className={styles.secondHalf}>
+                              <div className={styles.TopSection}>
+                                  <h3>{item.title}</h3>
+                                  <p>{item.details}</p>
+                              </div>
+                              <div className={styles.BottomSection}>
+                                  <p>R{item.originalPrice}</p>
+                              </div>
+                          </div>
                       </div>
                   ))
                 : null}
