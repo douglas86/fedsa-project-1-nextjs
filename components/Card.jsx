@@ -49,6 +49,16 @@ const Card = () => {
                                               />
                                           </div>
                                       </button>
+                                      <button
+                                          className={styles.productCardButton}
+                                      >
+                                          <Image
+                                              src={`/static/images/assets/cart.svg`}
+                                              alt="cart"
+                                              width={20}
+                                              height={20}
+                                          />
+                                      </button>
                                   </div>
                               </div>
                           </section>
