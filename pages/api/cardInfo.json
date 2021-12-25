@@ -14,5 +14,13 @@
         "image": "chair-6.jpg",
         "originalPrice": 2199.99,
         "discountedPrice": 1249.99
+    },
+    "Card3": {
+        "ObjectId": 3,
+        "title": "BEACHCOMER",
+        "details": "Outdoor resistant bar stool with a smooth finish.",
+        "image": "chair-3.jpg",
+        "originalPrice": 1099.99,
+        "discountedPrice": 899.99
     }
 }
