@@ -4,7 +4,7 @@ import { Getter } from './api';
 
 const Card = () => {
 
-    console.log('Getting', Getter('/api/Card'));
+    console.log('Getting', Getter('/api/card'));
 
     return (
         <div className={styles.card}>

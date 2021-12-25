@@ -1,13 +1,12 @@
-export default function handler(req, res) {
+import Cards from './cardInfo.json';
+
+const handler = async (req, res) => {
     const { method, body } = req;
 
     switch (method) {
         case 'GET':
             try {
-                res.status(200).json({
-                    success: true,
-                    data: 'This is a get message',
-                });
+                res.status(200).send(Cards);
             } catch (err) {
                 res.status(400).json({ success: false });
             }
@@ -16,4 +15,6 @@ export default function handler(req, res) {
             res.status(400).json({ message: 'Resource not found' });
             break;
     }
-}
+};
+
+export default handler;
