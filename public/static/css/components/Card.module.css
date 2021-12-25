@@ -12,6 +12,10 @@
 .image {
     width: 50%;
 }
-.text {
-    padding: 2%;
+.header {
+    font-size: 38px;
+    font-weight: 400;
+}
+.prices {
+    font-size: 28px;
 }

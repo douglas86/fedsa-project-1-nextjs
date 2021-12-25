@@ -10,7 +10,7 @@ const Card = () => {
     return (
         <div>
             {Get !== undefined
-                ? Object.values(Get).map((item) => (
+                ? Object.values(Get.data).map((item) => (
                       <div key={item.ObjectId} className={styles.card}>
                           <div className={styles.image}>
                               <Image
@@ -21,8 +21,8 @@ const Card = () => {
                               />
                           </div>
                           <div className={styles.text}>
-                              <h1>{item.title}</h1>
-                              <p>{item.details}</p>
+                              <h1 className={styles.title}>{item.title}</h1>
+                              <p className={styles.details}>{item.details}</p>
                               <div className={styles.prices}>
                                   <p>R{item.originalPrice}</p>
                                   <p>R{item.discountedPrice}</p>

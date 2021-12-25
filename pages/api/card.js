@@ -6,7 +6,7 @@ const handler = async (req, res) => {
     switch (method) {
         case 'GET':
             try {
-                res.status(200).send(Cards);
+                res.status(200).json({ success: true, data: Cards });
             } catch (err) {
                 res.status(400).json({ success: false });
             }
