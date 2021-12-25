@@ -1,8 +1,7 @@
-What I am trying to achieve:
-I want to create a Card.js backend
-Create a file for each card call that file a txt file
-use the fs module to grab data from that file
-sending the data grabbed from that file to the front end
+Next steps:
+Using a map to grab data from json file
+iterate over a certain piece of the map
+it I pass a number to an arry only iterate over that number
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
