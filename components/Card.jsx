@@ -24,8 +24,8 @@ const Card = () => {
                               <h1>{item.title}</h1>
                               <p>{item.details}</p>
                               <div className={styles.prices}>
-                                  <p>{item.originalPrice}</p>
-                                  <p>{item.discountedPrice}</p>
+                                  <p>R{item.originalPrice}</p>
+                                  <p>R{item.discountedPrice}</p>
                               </div>
                           </div>
                       </div>
