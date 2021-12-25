@@ -36,8 +36,19 @@ const Card = () => {
                                   </ul>
                                   <div className={styles.icons}>
                                       <button
-                                          className={productCardButton}
-                                      ></button>
+                                          className={styles.productCardButton}
+                                      >
+                                          <div
+                                              className={styles.cardButtonHeart}
+                                          >
+                                              <Image
+                                                  src={`/static/images/assets/heart.svg`}
+                                                  alt="heart"
+                                                  width={20}
+                                                  height={20}
+                                              />
+                                          </div>
+                                      </button>
                                   </div>
                               </div>
                           </section>
