@@ -24,14 +24,34 @@ const Card = () => {
                                   <p>{item.details}</p>
                               </div>
                               <div className={styles.BottomSection}>
-                                  <ul>
-                                      <li className={styles.topPrice}>
-                                          R{item.originalPrice}
-                                      </li>
-                                      <li className={styles.bottomPrice}>
-                                          R{item.discountedPrice}
-                                      </li>
-                                  </ul>
+                                  <div className={styles.lists}>
+                                      <ul>
+                                          <li className={styles.topPrice}>
+                                              R{item.originalPrice}
+                                          </li>
+                                          <li className={styles.bottomPrice}>
+                                              R{item.discountedPrice}
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div className={styles.icons}>
+                                      <div className={styles.iconImage}>
+                                          <Image
+                                              src={`/static/images/assets/heart.svg`}
+                                              alt="heart"
+                                              width={50}
+                                              height={50}
+                                          />
+                                      </div>
+                                      <div className={styles.iconImage}>
+                                          <Image
+                                              src={`/static/images/assets/cart.svg`}
+                                              alt="cart"
+                                              width={50}
+                                              height={50}
+                                          />
+                                      </div>
+                                  </div>
                               </div>
                           </div>
                       </div>

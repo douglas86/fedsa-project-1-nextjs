@@ -24,13 +24,22 @@
 }
 .BottomSection {
     display: flex;
-    margin-bottom: 20px;
 }
 .BottomSection ul {
     padding-left: 0;
 }
 .BottomSection li {
     list-style-type: none;
+}
+.lists {
+    width: 100%;
+}
+.icons {
+    display: flex;
+    margin: 30px;
+}
+.iconImage {
+    margin-left: 10px
 }
 .topPrice {
     color: #8c8c8c;
@@ -41,7 +50,7 @@
     font-size: 30px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .card {
         display: inline-block;
         margin: 2% 25%;
