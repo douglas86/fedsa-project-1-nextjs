@@ -5,22 +5,6 @@
         "details": "A mix between class and affordability",
         "image": "chair-5.jpg",
         "originalPrice": 899.99,
-        "discountedPrice": 500.99
-    },
-    "Card2": {
-        "ObjectId": 2,
-        "title": "SUPREME BLACK LOTUS",
-        "details": "Imported velvet on a 4-pillar frame.",
-        "image": "chair-6.jpg",
-        "originalPrice": 2199.99,
-        "discountedPrice": 1249.99
-    },
-    "Card3": {
-        "ObjectId": 3,
-        "title": "BEACHCOMER",
-        "details": "Outdoor resistant bar stool with smooth finish",
-        "image": "chair-3.jpg",
-        "originalPrice": 1099.99,
-        "discountedPrice": 899.99
+        "discountedPrice": 549.99
     }
 }
