@@ -1,8 +1,6 @@
 import styles from '../public/static/css/components/TotalPrice.module.css';
 
 const TotalPrice = ({ props }) => {
-    console.log('props', props);
-
     return (
         <div className={styles.totalPrice}>
             <h3>Total Price: R{props !== null ? props.cart : 0}</h3>

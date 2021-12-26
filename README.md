@@ -1,3 +1,5 @@
+## Installing this project locally
+
 How you download and install this repo locally:
 git clone to where you want this repo
 then cd into the new cloned project
@@ -7,8 +9,11 @@ once node modules have been installed
 then run: npm run dev
 on the web browser browse to localhost:3000
 
+## Known Problems
 
-
+The writing to Json file is slow
+When you load it up for the first time to works perfectly
+But if you click on the heart or cart button it takes a while to load
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

@@ -16,5 +16,4 @@ export const Putting = async (url, data) => {
         },
         body: JSON.stringify(data),
     });
-    console.log('data', data);
 };

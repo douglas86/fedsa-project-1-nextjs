@@ -10,14 +10,10 @@ const Home = () => {
     const Get = Getter('/api/card');
     const [count, setCount] = useState(0);
 
-    console.log('Get', Get);
-
     return (
         <>
             <Banner />
-            <TotalPrice
-                props={Get !== undefined ? Get.totalPrice : null}
-            />
+            <TotalPrice props={Get !== undefined ? Get.totalPrice : null} />
             {Get !== undefined
                 ? Object.entries(Get.data)
                       .slice(count, count + 3)

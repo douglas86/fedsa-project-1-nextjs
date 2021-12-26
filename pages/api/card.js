@@ -5,8 +5,6 @@ import Info from './info.json';
 const handler = async (req, res) => {
     const { method, body } = req;
 
-    console.log('method', method);
-
     switch (method) {
         case 'GET':
             try {
@@ -18,7 +16,6 @@ const handler = async (req, res) => {
             } catch (err) {
                 res.status(400).json({ success: false });
             }
-            console.log('get');
             break;
         case 'PUT':
             try {
@@ -33,8 +30,6 @@ const handler = async (req, res) => {
                     if (err) throw err;
                     console.log('JSON data is saved!');
                 });
-
-                console.log('Putting');
             } catch (err) {
                 res.status(400).json({ success: false });
             }
