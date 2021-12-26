@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import styles from '../public/static/css/components/Card.module.css';
 import useSWR, { mutate } from 'swr';
-import { Posting } from './api';
+import { Posting, Putting } from './api';
 // import { Posting } from './api';
 
 const Card = ({ props }) => {
@@ -35,7 +35,9 @@ const Card = ({ props }) => {
                     <div className={styles.icons}>
                         <div className={styles.iconImage}>
                             <button
-                                onClick={() => Posting('/api/user', { n: 'o' })}
+                                onClick={() =>
+                                    Putting('/api/card', { heart: 1 })
+                                }
                             >
                                 <Image
                                     src={`/static/images/assets/heart.svg`}
@@ -47,7 +49,11 @@ const Card = ({ props }) => {
                         </div>
                         <div className={styles.iconImage}>
                             <button
-                                onClick={() => Posting('/api/user', { i: 't' })}
+                                onClick={() =>
+                                    Putting('/api/card', {
+                                        cart: props.discountedPrice,
+                                    })
+                                }
                             >
                                 <Image
                                     src={`/static/images/assets/cart.svg`}

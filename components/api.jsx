@@ -17,3 +17,14 @@ export const Posting = async (url, data) => {
         body: JSON.stringify(data),
     });
 };
+
+export const Putting = async (url, data) => {
+    fetch(url, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    });
+    console.log('data', data);
+};
