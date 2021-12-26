@@ -2,8 +2,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import styles from '../public/static/css/components/Card.module.css';
 import useSWR, { mutate } from 'swr';
-import { Posting, Putting } from './api';
-// import { Posting } from './api';
+import { Putting } from './api';
 
 const Card = ({ props }) => {
     return (
@@ -35,9 +34,10 @@ const Card = ({ props }) => {
                     <div className={styles.icons}>
                         <div className={styles.iconImage}>
                             <button
-                                onClick={() =>
-                                    Putting('/api/card', { heart: 1 })
-                                }
+                                onClick={async () => {
+                                    await Putting('/api/card', { heart: 1 }),
+                                        mutate('/api/card');
+                                }}
                             >
                                 <Image
                                     src={`/static/images/assets/heart.svg`}
@@ -49,11 +49,12 @@ const Card = ({ props }) => {
                         </div>
                         <div className={styles.iconImage}>
                             <button
-                                onClick={() =>
-                                    Putting('/api/card', {
+                                onClick={async () => {
+                                    await Putting('/api/card', {
                                         cart: props.discountedPrice,
-                                    })
-                                }
+                                    }),
+                                        mutate('/api/card');
+                                }}
                             >
                                 <Image
                                     src={`/static/images/assets/cart.svg`}
