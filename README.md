@@ -1,7 +1,14 @@
-Next steps:
-Using a map to grab data from json file
-iterate over a certain piece of the map
-it I pass a number to an arry only iterate over that number
+How you download and install this repo locally:
+git clone to where you want this repo
+then cd into the new cloned project
+then install all required node_modules
+using: npm install
+once node modules have been installed
+then run: npm run dev
+on the web browser browse to localhost:3000
+
+
+
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
