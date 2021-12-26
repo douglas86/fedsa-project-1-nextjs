@@ -17,12 +17,15 @@ const Home = () => {
                       .slice(count, count + 3)
                       .map(([key, values]) => <Card key={key} props={values} />)
                 : null}
-            <button
-                onClick={() => (count >= 6 ? setCount(0) : setCount(count + 3))}
-                className={styles.button}
-            >
-                LOAD MORE
-            </button>
+            <div className={styles.load_more}>
+                <button
+                    onClick={() =>
+                        count >= 6 ? setCount(0) : setCount(count + 3)
+                    }
+                >
+                    LOAD MORE
+                </button>
+            </div>
         </>
     );
 };
