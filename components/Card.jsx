@@ -2,13 +2,11 @@ import Image from 'next/image';
 import styles from '../public/static/css/components/Card.module.css';
 import { Getter } from './api';
 
-const Card = () => {
-    const Get = Getter('/api/card');
-
+const Card = ({ props }) => {
     return (
         <div>
-            {Get !== undefined
-                ? Object.values(Get.data).map((item) => (
+            {props !== undefined
+                ? Object.values(props.data).map((item) => (
                       <div key={item.ObjectId} className={styles.card}>
                           <div className={styles.image}>
                               <Image

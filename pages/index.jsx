@@ -7,12 +7,10 @@ import { Getter } from '../components/api';
 const Home = () => {
     const Get = Getter('/api/card');
 
-    console.log('Get', Get);
-
     return (
         <>
             <Banner />
-            <Card />
+            <Card props={Get} />
         </>
     );
 };
