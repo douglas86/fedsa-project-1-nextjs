@@ -6,7 +6,7 @@ import { Getter } from '../components/api';
 import { useState } from 'react';
 
 const Home = () => {
-    const Get = Getter('/api/card');
+    const Get = Getter('/api/info');
     const [count, setCount] = useState(0);
 
     return (

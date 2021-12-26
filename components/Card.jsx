@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styles from '../public/static/css/components/Card.module.css';
-import { Getter } from './api';
+// import { Getter } from './api';
 
 const Card = ({ props }) => {
     return (
