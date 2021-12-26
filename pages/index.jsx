@@ -11,6 +11,7 @@ const Home = () => {
         <>
             <Banner />
             <Card props={Get} />
+            <button className={styles.button}>LOAD MORE</button>
         </>
     );
 };

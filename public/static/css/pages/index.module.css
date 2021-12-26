@@ -1,3 +1,17 @@
 .card {
     color: red;
 }
+.button {
+    position: relative;
+    color: white;
+    background-color: #c48b98;
+    width: 374px;
+    height: 80px;
+    margin: 1% 40%;
+}
+
+@media (max-width: 1000px) {
+    .button {
+        margin: 1% 25%;
+    }
+}
