@@ -44,6 +44,10 @@
 .iconImage {
     margin-left: 10px;
 }
+.iconImage button {
+    background-color: transparent;
+    border: none;
+}
 .topPrice {
     color: #8c8c8c;
     text-decoration-line: line-through;

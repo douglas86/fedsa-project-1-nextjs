@@ -6,14 +6,6 @@ const handler = async (req, res) => {
 
     switch (method) {
         case 'POST':
-            const user = {
-                id: 1,
-                name: 'John Doe',
-                age: 22,
-            };
-
-            const data = JSON.stringify(user);
-
             try {
                 fs.writeFile(
                     './pages/api/info.json',

@@ -9,7 +9,7 @@ const Home = () => {
     const Get = Getter('/api/card');
     const [count, setCount] = useState(0);
 
-    console.log('Posting', Posting('/api/user', { name: 'douglas' }));
+    console.log('Posting', Posting('/api/user', { cart: 'douglas' }));
 
     return (
         <>

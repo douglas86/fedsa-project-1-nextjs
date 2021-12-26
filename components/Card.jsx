@@ -30,20 +30,24 @@ const Card = ({ props }) => {
                     </div>
                     <div className={styles.icons}>
                         <div className={styles.iconImage}>
-                            <Image
-                                src={`/static/images/assets/heart.svg`}
-                                alt="heart"
-                                width={50}
-                                height={50}
-                            />
+                            <button>
+                                <Image
+                                    src={`/static/images/assets/heart.svg`}
+                                    alt="heart"
+                                    width={50}
+                                    height={50}
+                                />
+                            </button>
                         </div>
                         <div className={styles.iconImage}>
-                            <Image
-                                src={`/static/images/assets/cart.svg`}
-                                alt="cart"
-                                width={50}
-                                height={50}
-                            />
+                            <button>
+                                <Image
+                                    src={`/static/images/assets/cart.svg`}
+                                    alt="cart"
+                                    width={50}
+                                    height={50}
+                                />
+                            </button>
                         </div>
                     </div>
                 </div>
