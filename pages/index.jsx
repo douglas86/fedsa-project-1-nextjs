@@ -2,6 +2,7 @@ import styles from '../public/static/css/pages/index.module.css';
 
 import Banner from '../components/Banner';
 import Card from '../components/Card';
+import TotalPrice from '../components/TotalPrice';
 import { Getter } from '../components/api';
 import { useState } from 'react';
 
@@ -14,6 +15,9 @@ const Home = () => {
     return (
         <>
             <Banner />
+            <TotalPrice
+                props={Get !== undefined ? Get.totalPrice : null}
+            />
             {Get !== undefined
                 ? Object.entries(Get.data)
                       .slice(count, count + 3)
