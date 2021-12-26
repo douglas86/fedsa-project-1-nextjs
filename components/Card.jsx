@@ -1,5 +1,9 @@
+import { useState } from 'react';
 import Image from 'next/image';
 import styles from '../public/static/css/components/Card.module.css';
+import useSWR, { mutate } from 'swr';
+import { Posting } from './api';
+// import { Posting } from './api';
 
 const Card = ({ props }) => {
     return (
@@ -30,7 +34,9 @@ const Card = ({ props }) => {
                     </div>
                     <div className={styles.icons}>
                         <div className={styles.iconImage}>
-                            <button>
+                            <button
+                                onClick={() => Posting('/api/user', { n: 'o' })}
+                            >
                                 <Image
                                     src={`/static/images/assets/heart.svg`}
                                     alt="heart"
@@ -40,7 +46,9 @@ const Card = ({ props }) => {
                             </button>
                         </div>
                         <div className={styles.iconImage}>
-                            <button>
+                            <button
+                                onClick={() => Posting('/api/user', { i: 't' })}
+                            >
                                 <Image
                                     src={`/static/images/assets/cart.svg`}
                                     alt="cart"

@@ -2,14 +2,12 @@ import styles from '../public/static/css/pages/index.module.css';
 
 import Banner from '../components/Banner';
 import Card from '../components/Card';
-import { Getter, Posting } from '../components/api';
+import { Getter } from '../components/api';
 import { useState } from 'react';
 
 const Home = () => {
     const Get = Getter('/api/card');
     const [count, setCount] = useState(0);
-
-    console.log('Posting', Posting('/api/user', { cart: 'douglas' }));
 
     return (
         <>
