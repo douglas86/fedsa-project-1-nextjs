@@ -23,6 +23,17 @@ const handler = async (req, res) => {
         case 'PUT':
             try {
                 console.log('body', body);
+                console.log('Info', Info.heart);
+
+                const newData = {
+                    heart: body.heart ? (Info.heart += 1) : Info.heart,
+                    cart: body.cart ? (Info.cart += body.cart) : Info.cart,
+                };
+
+                console.log('cart', typeof Info.cart);
+
+                const data = JSON.stringify(newData);
+
                 // console.log('Cards', Info);
 
                 // const data = JSON.stringify(Info);
@@ -32,14 +43,10 @@ const handler = async (req, res) => {
                 // console.log('data2', myObj);
                 // console.log('body', body);
 
-                // fs.writeFile(
-                //     './pages/api/info.json',
-                //     JSON.stringify(myObj),
-                //     (err) => {
-                //         if (err) throw err;
-                //         console.log('JSON data is saved!');
-                //     }
-                // );
+                fs.writeFile('./pages/api/info.json', data, (err) => {
+                    if (err) throw err;
+                    console.log('JSON data is saved!');
+                });
 
                 // res.status(200).json({
                 //     success: true,
