@@ -22,5 +22,53 @@
         "image": "chair-3.jpg",
         "originalPrice": 1099.99,
         "discountedPrice": 899.99
+    },
+    "Card4": {
+        "ObjectId": 4,
+        "title": "COUNTESSA",
+        "details": "A mix between class and affordability",
+        "image": "chair-1.jpg",
+        "originalPrice": 230.99,
+        "discountedPrice": 200.99
+    },
+    "Card5": {
+        "ObjectId": 5,
+        "title": "SUPREME BLACK LOTUS",
+        "details": "Imported velvet on a 4-pillar frame.",
+        "image": "chair-2.jpg",
+        "originalPrice": 1850.99,
+        "discountedPrice": 1700.99
+    },
+    "Card6": {
+        "ObjectId": 6,
+        "title": "BEACHCOMER",
+        "details": "Outdoor resistant bar stool with a smooth finish.",
+        "image": "chair-4.jpg",
+        "originalPrice": 1099.99,
+        "discountedPrice": 899.99
+    },
+    "Card7": {
+        "ObjectId": 7,
+        "title": "COUNTESSA",
+        "details": "A mix between class and affordability",
+        "image": "chair-7.jpg",
+        "originalPrice": 230.99,
+        "discountedPrice": 200.99
+    },
+    "Card8": {
+        "ObjectId": 8,
+        "title": "SUPREME BLACK LOTUS",
+        "details": "Imported velvet on a 4-pillar frame.",
+        "image": "chair-8.jpg",
+        "originalPrice": 1850.99,
+        "discountedPrice": 1700.99
+    },
+    "Card9": {
+        "ObjectId": 9,
+        "title": "BEACHCOMER",
+        "details": "Outdoor resistant bar stool with a smooth finish.",
+        "image": "chair-9.jpg",
+        "originalPrice": 1099.99,
+        "discountedPrice": 899.99
     }
 }

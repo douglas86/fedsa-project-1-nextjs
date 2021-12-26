@@ -7,7 +7,7 @@ import { Getter } from '../components/api';
 const Home = () => {
     const Get = Getter('/api/card');
 
-    console.log('Getter', Get.data);
+    console.log('Get', Get);
 
     return (
         <>
