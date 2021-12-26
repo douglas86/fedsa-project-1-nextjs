@@ -1,3 +1,4 @@
+import fs from 'fs';
 import info from './info.json';
 
 const handler = async (req, res) => {
@@ -5,12 +6,26 @@ const handler = async (req, res) => {
 
     switch (method) {
         case 'POST':
+            const user = {
+                id: 1,
+                name: 'John Doe',
+                age: 22,
+            };
+
+            const data = JSON.stringify(user);
+
             try {
-                console.log('body', body);
-                res.status(200).json({
-                    success: true,
-                    data: info,
-                });
+                fs.writeFile(
+                    './pages/api/info.json',
+                    JSON.stringify(body),
+                    (err) => {
+                        if (err) throw err;
+                        res.status(200).json({
+                            success: true,
+                            message: 'Data saved successfully!',
+                        });
+                    }
+                );
             } catch (err) {
                 res.status(400).json({
                     success: false,
