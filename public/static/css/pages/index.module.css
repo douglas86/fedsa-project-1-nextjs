@@ -5,9 +5,9 @@
     position: relative;
     color: white;
     background-color: #c48b98;
-    width: 374px;
+    width: 25%;
     height: 80px;
-    margin: 1% 40%;
+    margin: 1% 25%;
 }
 
 @media (max-width: 1000px) {

@@ -3,9 +3,12 @@ import styles from '../public/static/css/components/Card.module.css';
 import { Getter } from './api';
 
 const Card = ({ props }) => {
+    console.log('props', props);
+
     return (
         <div>
-            {props !== undefined
+            <h1>This is the card</h1>
+            {/* {props !== undefined
                 ? Object.values(props.data).map((item) => (
                       <div key={item.ObjectId} className={styles.card}>
                           <div className={styles.image}>
@@ -54,7 +57,7 @@ const Card = ({ props }) => {
                           </div>
                       </div>
                   ))
-                : null}
+                : null} */}
         </div>
     );
 };
