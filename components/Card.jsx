@@ -1,10 +1,14 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import Image from 'next/image';
 import styles from '../public/static/css/components/Card.module.css';
 import useSWR, { mutate } from 'swr';
 import { Putting } from './api';
+import { Context } from './Context';
 
 const Card = ({ props }) => {
+    const heart = useContext(Context);
+    const cart = useContext(Context);
+
     return (
         <div className={styles.card}>
             <div className={styles.image}>
@@ -36,7 +40,8 @@ const Card = ({ props }) => {
                             <button
                                 onClick={async () => {
                                     await Putting('/api/card', { heart: 1 }),
-                                        mutate('/api/card');
+                                        mutate('/api/card'),
+                                        heart.setHeart(heart.heart + 1);
                                 }}
                             >
                                 <Image
@@ -53,7 +58,10 @@ const Card = ({ props }) => {
                                     await Putting('/api/card', {
                                         cart: props.discountedPrice,
                                     }),
-                                        mutate('/api/card');
+                                        mutate('/api/card'),
+                                        cart.setCart(
+                                            cart.cart + props.discountedPrice
+                                        );
                                 }}
                             >
                                 <Image
