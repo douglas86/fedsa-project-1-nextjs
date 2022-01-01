@@ -1,5 +1,4 @@
 import styles from '../public/static/css/pages/index.module.css';
-
 import Banner from '../components/Banner';
 import Card from '../components/Card';
 import TotalPrice from '../components/TotalPrice';
@@ -13,7 +12,7 @@ const Home = () => {
     return (
         <>
             <Banner />
-            <TotalPrice props={Get !== undefined ? Get.totalPrice : null} />
+            <TotalPrice />
             {Get !== undefined
                 ? Object.entries(Get.data)
                       .slice(count, count + 3)

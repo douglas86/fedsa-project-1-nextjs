@@ -2,7 +2,7 @@ import { useContext } from 'react/cjs/react.development';
 import styles from '../public/static/css/components/TotalPrice.module.css';
 import { Context } from './Context';
 
-const TotalPrice = ({ props }) => {
+const TotalPrice = () => {
     const context = useContext(Context);
 
     return (

@@ -1,8 +1,6 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import Image from 'next/image';
 import styles from '../public/static/css/components/Card.module.css';
-import useSWR, { mutate } from 'swr';
-import { Putting } from './api';
 import { Context } from './Context';
 
 const Card = ({ props }) => {
@@ -38,11 +36,7 @@ const Card = ({ props }) => {
                     <div className={styles.icons}>
                         <div className={styles.iconImage}>
                             <button
-                                onClick={async () => {
-                                    await Putting('/api/card', { heart: 1 }),
-                                        mutate('/api/card'),
-                                        heart.setHeart(heart.heart + 1);
-                                }}
+                                onClick={() => heart.setHeart(heart.heart + 1)}
                             >
                                 <Image
                                     src={`/static/images/assets/heart.svg`}
@@ -54,15 +48,11 @@ const Card = ({ props }) => {
                         </div>
                         <div className={styles.iconImage}>
                             <button
-                                onClick={async () => {
-                                    await Putting('/api/card', {
-                                        cart: props.discountedPrice,
-                                    }),
-                                        mutate('/api/card'),
-                                        cart.setCart(
-                                            cart.cart + props.discountedPrice
-                                        );
-                                }}
+                                onClick={() =>
+                                    cart.setCart(
+                                        cart.cart + props.discountedPrice
+                                    )
+                                }
                             >
                                 <Image
                                     src={`/static/images/assets/cart.svg`}
